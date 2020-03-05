@@ -1,12 +1,1 @@
-[
-  {
-    "title":"Title",
-    "text":"Here is an example of a note body",
-    "id": 1
-  },
-  {
-    "title":"This is the first note!",
-    "text":"Wow. What a beautiful note. Such wow.",
-    "id": 2
-  }
-]
+[{"title":"Demo Note","text":"So saved\n","id":3}]

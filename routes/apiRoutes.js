@@ -1,11 +1,9 @@
 const db = require("../db.json")
 const fs = require("fs");
-let id = db.length + 1; //Each new note will generate a new id #
+let id = db.length + 1;
 
-//Setup api routes
 module.exports = function (app) {
 
-    //handles api get requests
     app.get("/api/notes", function (req, res) {
      // if (req.params.id != undefined){
         // get the notes with the id

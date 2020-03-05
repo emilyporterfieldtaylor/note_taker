@@ -10,13 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./public"));
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
-
-app.get("/notes", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/notes.html"));
-});
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // Start the server on the port
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
